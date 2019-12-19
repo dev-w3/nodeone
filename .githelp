@@ -1,0 +1,13 @@
+ 
+git init
+git config --list --show-origin
+git config --global user.name 'dev-w3'
+git config --global user.email 'dev-w3@yahoo.com'
+git config --list
+git remote add origin https://github.com/dev-w3/nodeone.git
+git status
+git add .
+git stash
+git commit -m "initial commit"
+git push  origin master
+git log 'oneline'
