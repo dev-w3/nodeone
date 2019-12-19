@@ -1,0 +1,62 @@
+<!-- views/partials/head.ejs -->
+<meta charset="UTF-8">
+<title>Super Awesome</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<style>
+    html,
+body,
+main.container {
+	height: 100%;
+}
+.container {
+    width: 1050px !important;
+    background: #f7f7f7;
+}
+
+main.container {
+	display: table;
+	width: 100%;
+	margin-top: 25px;
+	padding: 0;
+	/*set left/right padding according to needs*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+main .row {
+	height: 100%;
+	display: table-row;
+}
+
+main .sidebar {
+	display: table-cell;
+	width: 300px;
+	background: #383435;
+	color: #aaa;
+	padding-top: 20px;
+}
+
+main .content {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding: 33px;
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 2px 1px 2px #f2f2f2;
+}
+ul#homeSubmenu li {
+    padding: 6px;
+    display: block;
+    background: #050200;
+    border-bottom: 1px solid #383435;
+}
+ul#homeSubmenu li a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+</style>

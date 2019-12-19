@@ -1,0 +1,36 @@
+<!-- views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include ('../partials/head') %>
+</head>
+<body class="container">
+
+<main class="container">
+	<div class="row">
+
+	  <%- include ('../partials/header') %>
+
+		<div class="content">
+			<h1>Welcome, <%= name %></h1>
+			<p><%= indexdata %>
+			</p>
+
+<ul>
+    <% drinks.forEach(function(as) { %>
+        <li><%= as.name %> - <%= as.drunkness %></li>
+    <% }); %>
+</ul>
+
+
+
+		</div>
+	</div>
+</main>
+
+<footer>
+    <%- include ('../partials/footer') %>
+</footer>
+
+</body>
+</html>
